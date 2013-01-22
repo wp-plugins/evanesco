@@ -28,6 +28,11 @@ Official Page : <a href="http://www.sujinc.com/lab/evanesco/">Evanesco!</a>
 
 1. Go to Settings -> Evanesco!. (세팅의 Evanesco!로 이동하세요!)
 
+== Frequently Asked Questions ==
+
+= Will it affect my website? (이 플러그인이 제 웹사이트에 영향을 미치나요?) =
+
+No. This plugin just change the visiblity of menus and widgets on your admin page. (아뇨. 이 플러그인은 단지 어드민 페이지에서 메뉴와 위젯을 보이지 않게끔만 합니다.)
 
 == Screenshots ==
 
