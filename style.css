@@ -1,0 +1,12 @@
+.sj_evanesco h2 {margin-bottom:20px;}
+.sj_evanesco h3 {clear:both;}
+.sj_evanesco .col_wrapper {margin:0 0 10px 20px;}
+
+.sj_evanesco #btns_menus, .sj_evanesco #btns_widgets {width:60%; margin-bottom:20px;}
+
+.sj_evanesco button {background-color:#AAEEAA; display:block; float:left; font-size:13px; margin:0 10px 10px 0; padding:5px 10px; border:1px solid #CCCCCC; border-radius:5px; cursor:pointer;}
+.sj_evanesco button.hide {background-color:#DDDDDD; color:#B0B0B0;}
+
+.sj_evanesco .donation {position:absolute; right:0; border:1px solid #999999; padding:5px; margin-right:15px;}
+
+.sj_evanesco .submit {clear:both;}
