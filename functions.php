@@ -85,8 +85,8 @@ class sjEvanesco {
 	}
 
 	public function admin_enqueue_scripts() {
-		wp_enqueue_style('sujin_' . $this->text_domain, plugin_dir_url( __FILE__ ) . '/style.css');
-		wp_enqueue_script('sujin' . $this->text_domain, plugin_dir_url( __FILE__ ) . '/script.js');
+		wp_enqueue_style('sujin_' . $this->text_domain, plugin_dir_url( __FILE__ ) . 'style.css');
+		wp_enqueue_script('sujin' . $this->text_domain, plugin_dir_url( __FILE__ ) . 'script.js');
 	}
 
 	public function trigger_admin_menu() {
