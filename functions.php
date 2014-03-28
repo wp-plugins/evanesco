@@ -44,7 +44,7 @@ class sjEvanesco {
 		$menu_temp = $menu;
 
 		foreach($menu_temp as $key => $value) {
-			if ($this->menus[$value[5]] == "hide") {
+			if ( !empty( $value[5] ) && !empty( $this->menus[$value[5]] ) && $this->menus[$value[5]] == "hide") {
 				unset($menu[$key]);
 			}
 		}
@@ -104,7 +104,7 @@ class sjEvanesco {
 				$this->widgets[$value->id_base] = $_POST["widget-" . $value->id_base];
 			}
 			update_option('sj-evanesco-widgets', $this->widgets);
-			
+
 			$this->redirect();
 		}
 
