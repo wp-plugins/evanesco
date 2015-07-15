@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	$("form#evanesco button").bind("click", function() {
+	$("form#form-evanesco button").bind("click", function() {
 		var id = "#" + $(this).attr("id") + "-input";
 
 		if ($(this).hasClass("hide")) {
@@ -9,6 +9,6 @@ jQuery(document).ready(function($) {
 			$(this).addClass("hide");
 			$(id).val("hide");
 		}
-		
+
 	});
 });

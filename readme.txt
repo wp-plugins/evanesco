@@ -1,10 +1,10 @@
-=== Evanesco! ===
+=== Evanesco! : Admin Menu and Widget Controller ===
 Contributors: sujin2f
-Donate link: http://www.sujinc.com/lab/evanesco/
-Tags: admin, menu, widget, hide, show
-Requires at least: 3.3
-Tested up to: 2.8
-Stable tag: 1.0
+Donate link: http://www.sujinc.com/
+Tags: admin, menu, widget, hide, show, control
+Requires at least: 2.8
+Tested up to: 4.2.2
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ Evanesco! is the spell of Harry Potter, used for causing an object to disappear.
 1. Setting. (세팅)
 
 == Changelog ==
+
+= 2.0 =
+* Fix Some Error and UI
 
 = 1.0 =
 * Original Version

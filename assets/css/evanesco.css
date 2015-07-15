@@ -1,0 +1,32 @@
+#evanesco.wrap #option {
+  overflow: auto;
+}
+#evanesco.wrap #option .inside {
+  overflow: auto;
+}
+#evanesco.wrap #option #btns_widgets {
+  width: 60%;
+  margin-bottom: 20px;
+}
+#evanesco.wrap #option button {
+  background-color: #AAEEAA;
+  display: block;
+  float: left;
+  font-size: 13px;
+  margin: 0 10px 10px 0;
+  padding: 5px 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#evanesco.wrap #option button.hide {
+  background-color: #DDDDDD;
+  color: #B0B0B0;
+}
+#evanesco.wrap #side-sortables #save_settings .inside {
+  padding: 0;
+  margin: 0;
+}
+#evanesco.wrap #side-sortables #donation .inside {
+  text-align: center;
+}
