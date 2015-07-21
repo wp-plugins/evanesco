@@ -4,7 +4,7 @@
  *
  * @author Sujin 수진 Choi
  * @package wp-hacks
- * @version 1.0.2
+ * @version 1.0.3
  *
  */
 
@@ -95,7 +95,7 @@ if ( !class_exists('WP_Admin_Page' ) ) {
 			add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
 
 			if ( $dir_name ) {
-				add_filter( 'plugin_row_meta' , array( $this, 'add_setting_into_plugins_table' ), 15, 3 );
+				add_filter( 'plugin_action_links' , array( $this, 'plugin_action_link' ), 15, 2 );
 				$this->dir_name = $dir_name;
 			}
 		}
@@ -137,12 +137,18 @@ if ( !class_exists('WP_Admin_Page' ) ) {
 			echo '</div>';
 		}
 
-		function add_setting_into_plugins_table( $plugin_meta, $file, $plugin_data ) {
-			if ( $this->dir_name && strpos( $file, $this->dir_name ) !== false ) {
-				$plugin_meta[] = sprintf( '<a href="%s">Setting</a>', $this->url );
+		/**
+		 * Setting Link on Plugins Page
+		 *
+		 * @since 1.0.3
+		 * @access public
+		 */
+		function plugin_action_link( $actions, $plugin_file ) {
+			if ( $this->dir_name && strpos( $plugin_file, $this->dir_name ) !== false ) {
+ 				$actions[] = sprintf( '<a href="%s">Setting</a>', $this->url );
 			}
 
-			return $plugin_meta;
+			return $actions;
 		}
 
 		protected function show_message( $text, $class = 'updated' ) {
